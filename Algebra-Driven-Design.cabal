@@ -1,0 +1,51 @@
+cabal-version:      2.4
+name:               Algebra-Driven-Design
+version:            0.1.0.0
+author:             Michael Kohlhaas
+maintainer:         michael.kohlhaas@chammy.info
+
+extra-source-files:
+    README.md
+
+library
+    exposed-modules:
+        QuickSpec.Extra
+        Scavenge.App
+        Scavenge.ClueState
+        Scavenge.CPS
+        Scavenge.Initial
+        Scavenge.InputFilter
+        Scavenge.Results
+        Scavenge.Spec
+        Scavenge.Test
+        Tiles.Efficient
+        Tiles.Initial
+
+    hs-source-dirs:     code/
+    default-language:   Haskell2010
+    default-extensions:
+        ConstraintKinds DeriveGeneric GeneralizedNewtypeDeriving
+        InstanceSigs KindSignatures LambdaCase OverloadedStrings
+        RecordWildCards ScopedTypeVariables StandaloneDeriving
+        TupleSections TypeApplications ViewPatterns DerivingStrategies
+        DerivingVia UnicodeSyntax
+
+    ghc-options:
+        -Wall -Wcompat -Widentities -Wincomplete-uni-patterns
+        -Wincomplete-record-updates -Wredundant-constraints
+        -fhide-source-paths -Wpartial-fields -Wmissing-deriving-strategies
+
+    build-depends:
+        JuicyPixels >=3.3.8 && <3.4,
+        QuickCheck >=2.14.2 && <2.15,
+        base >=4.7 && <5,
+        bytestring >=0.10.12 && <0.11,
+        containers >=0.6.5 && <0.7,
+        dlist >=1.0 && <1.1,
+        generic-data >=1.0.0 && <1.1,
+        hashable >=1.4.1 && <1.5,
+        monoid-subclasses >=1.2 && <1.3,
+        monoidal-containers >=0.6.3 && <0.7,
+        mtl >=2.2.2 && <2.3,
+        multiset >=0.3.4 && <0.4,
+        quickspec >=2.1.5 && <2.2
