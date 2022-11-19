@@ -1,5 +1,6 @@
 # Algebra-Driven Design
 
+[Conal Elliott - Denotational Design: From Meanings To Programs](https://www.youtube.com/watch?v=bmKYiUOEo2A)
 
 ## Dedication
 
